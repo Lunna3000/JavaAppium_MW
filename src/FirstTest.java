@@ -10,6 +10,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.lang.reflect.Parameter;
 import java.net.URL;
 
 public class FirstTest {
@@ -38,8 +39,32 @@ public class FirstTest {
         driver.quit();
     }
 
+//    @Test
+//    public void Ex2()
+//    {
+//        waitForElementAndClick(
+//                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+//                "Cannon find Search Wikipedia input",
+//                5
+//        );
+//
+//        WebElement search_string = waitForElementPresent(
+//                By.id("org.wikipedia:id/search_src_text"),
+//                "Cannon find search string",
+//                5
+//        );
+//
+//        String text_in_line = search_string.getAttribute("text");
+//
+//        Assert.assertEquals(
+//                "Cannon find Search...",
+//                "Search…",
+//                text_in_line
+//        );
+//    }
+
     @Test
-    public void Ex2()
+    public void Ex3()
     {
         waitForElementAndClick(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
@@ -47,20 +72,33 @@ public class FirstTest {
                 5
         );
 
-        WebElement search_string = waitForElementPresent(
+        waitForElementAndSendKeys(
                 By.id("org.wikipedia:id/search_src_text"),
+                "pineapple",
                 "Cannon find search string",
+                15
+        );
+
+//   В данном шаге проверяется наличие 2й статьи в списке. Если она есть, значит найдено больше одной статьи, то есть "несколько статей"
+        waitForElementPresent(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@index='1']"),
+                "Cannon find publications",
                 5
         );
 
-        String text_in_line = search_string.getAttribute("text");
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/search_close_btn"),
+                "Cannon find close button",
+                5
+        );
 
-        Assert.assertEquals(
-                "Cannon find Search...",
-                "Search…",
-                text_in_line
+        waitForElementNoPresent(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@index='1']"),
+                "The list is not empty",
+                5
         );
     }
+
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
@@ -76,5 +114,21 @@ public class FirstTest {
         WebElement element = waitForElementPresent(by, error_message, timeoutInSeconds);
         element.click();
         return element;
+    }
+
+    private WebElement waitForElementAndSendKeys(By by, String value, String error_message, long timeoutInSeconds)
+    {
+        WebElement element = waitForElementPresent(by, error_message, timeoutInSeconds);
+        element.sendKeys(value);
+        return element;
+    }
+
+    private Boolean waitForElementNoPresent(By by, String error_message, long timeoutInSeconds)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
+        wait.withMessage(error_message + "\n");
+        return wait.until(
+                ExpectedConditions.invisibilityOfElementLocated(by)
+        );
     }
 }

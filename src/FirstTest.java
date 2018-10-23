@@ -5,10 +5,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -51,14 +49,14 @@ public class FirstTest {
 
         WebElement search_string = waitForElementPresent(
                 By.id("org.wikipedia:id/search_src_text"),
-                "Cannon find Search Wikipedia input",
+                "Cannon find search string",
                 5
         );
 
         String text_in_line = search_string.getAttribute("text");
 
         Assert.assertEquals(
-                "No",
+                "Cannon find Search...",
                 "Search…",
                 text_in_line
         );

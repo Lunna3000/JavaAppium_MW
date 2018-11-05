@@ -11,8 +11,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.lang.reflect.Parameter;
 import java.net.URL;
+import java.util.List;
 
 public class FirstTest {
 
@@ -100,9 +100,190 @@ public class FirstTest {
 //        );
 //    }
 
+//    @Test
+//    public void Ex5()
+//    {
+//        waitForElementAndClick(
+//                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+//                "Cannon find Search Wikipedia input",
+//                5
+//        );
+//
+//        waitForElementAndSendKeys(
+//                By.id("org.wikipedia:id/search_src_text"),
+//                "ferret",
+//                "Cannon find search string",
+//                15
+//        );
+//
+//
+//        waitForElementAndClick(
+//                By.id("org.wikipedia:id/page_list_item_container"),
+//                "Mistake",
+//                15
+//        );
+//
+//        waitForElementAndClick(
+//                By.xpath("//android.widgwt.ImageView[@content-desc='More options']"),
+//                "Cannot find menu",
+//                10
+//        );
+//
+//        waitForElementAndClick(
+//                By.xpath("//*[@text='Add to reading list']"),
+//                "Cannot find Add to reading list",
+//                10
+//        );
+//
+//        waitForElementAndClick(
+//                By.id("org.wikipedia:id/onboarding_button"),
+//                "Cannot find button Got In",
+//                10
+//        );
+//
+//        waitForElementAndClear(
+//                By.id("org.wikipedia:id/text_input"),
+//                "Cannot find input field",
+//                5
+//        );
+//
+//        String name_of_folder = "My favorite articles";
+//
+//        waitForElementAndSendKeys(
+//                By.id("org.wikipedia:id/text_input"),
+//                name_of_folder,
+//                "Cannot find input field",
+//                5
+//        );
+//
+//        waitForElementAndClick(
+//                By.xpath("//*[@text='OK']"),
+//                "Cannot find button OK",
+//                5
+//        );
+//
+//        waitForElementAndClick(
+//                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
+//                "Cannot close article, cannot find X link",
+//                5
+//        );
+//
+////      - - - - - - - - - - Добавление второй статьи - - - - - - - - - - - - - - - -
+//
+//        waitForElementAndClick(
+//                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+//                "Cannon find Search Wikipedia input",
+//                5
+//        );
+//
+//        waitForElementAndSendKeys(
+//                By.id("org.wikipedia:id/search_src_text"),
+//                "ferret",
+//                "Cannon find search string",
+//                15
+//            );
+//
+//
+//        waitForElementAndClick(
+//                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@index='1']"),
+//                "Mistake",
+//                15
+//            );
+//
+//        waitForElementAndClick(
+//                By.xpath("//android.widgwt.ImageView[@content-desc='More options']"),
+//                "Cannot find menu",
+//                10
+//            );
+//
+//        waitForElementAndClick(
+//                By.xpath("//*[@text='Add to reading list']"),
+//                "Cannot find Add to reading list",
+//                10
+//            );
+//
+//        waitForElementAndClick(
+//                By.xpath("//*[@text='" + name_of_folder + "']"),
+//                "Cannot find Add to reading list",
+//                10
+//        );
+//
+//        waitForElementAndClick(
+//                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
+//                "Cannot close article, cannot find X link",
+//                5
+//        );
+////      - - - - - - - - - - Удаление статьи - - - - - - - - - - - - - - - -
+//
+//        waitForElementAndClick(
+//                By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),
+//                "Cannot find My lists",
+//                10
+//        );
+//
+//        waitForElementAndClick(
+//                By.xpath("//*[@text='" + name_of_folder + "']"),
+//                "Cannot find Add to reading list",
+//                10
+//        );
+//
+// // Убеждаемся, что в списке 2 статьи
+//
+//        String name_of_first_article = "Ferret";
+//        String name_of_second_article = "Ferretti Group";
+//
+//
+//
+//        waitForElementPresent(
+//                By.xpath("//*[@text='" + name_of_first_article + "']"),
+//                "Cannot find article 'Ferret'",
+//                5
+//        );
+//
+//        waitForElementPresent(
+//                By.xpath("//*[@text='" + name_of_second_article + "']"),
+//                "Cannot find article 'Ferretti Group'",
+//                5
+//        );
+//
+//        swipeElementToLeft(
+//                By.xpath("//*[@text='" + name_of_first_article + "']"),
+//                "Cannot find article 'Ferret'"
+//                );
+//
+//// Убеждаемся, что в списке осталась одна статья
+//
+//        waitForElementNoPresent(
+//                By.xpath("//*[@text='" + name_of_first_article + "']"),
+//                "Find article 'Ferret'",
+//                5
+//        );
+//
+//        waitForElementPresent(
+//                By.xpath("//*[@text='" + name_of_second_article + "']"),
+//                "Cannot find article 'Ferretti Group'",
+//                5
+//        );
+//
+//        waitForElementAndClick(
+//                By.xpath("//*[@text='" + name_of_second_article + "'']"),
+//                "Cannot find article 'Ferretti Group'",
+//                5
+//        );
+//
+//        waitForElementPresent(
+//                By.xpath("//*[@resource-id='org.wikipedia:id/view_page_title_text']//*[@text='" + name_of_second_article + "']"),
+//                "Cannot find article 'Ferretti Group'",
+//                5
+//        );
+//
+//    }
+
     @Test
-    public void Ex5()
+
+    public void Ex6()
     {
+
         waitForElementAndClick(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
                 "Cannon find Search Wikipedia input",
@@ -111,174 +292,28 @@ public class FirstTest {
 
         waitForElementAndSendKeys(
                 By.id("org.wikipedia:id/search_src_text"),
-                "ferret",
+                "Appium",
                 "Cannon find search string",
-                15
+                5
         );
 
 
         waitForElementAndClick(
                 By.id("org.wikipedia:id/page_list_item_container"),
-                "Mistake",
-                15
-        );
-
-        waitForElementAndClick(
-                By.xpath("//android.widgwt.ImageView[@content-desc='More options']"),
-                "Cannot find menu",
-                10
-        );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='Add to reading list']"),
-                "Cannot find Add to reading list",
-                10
-        );
-
-        waitForElementAndClick(
-                By.id("org.wikipedia:id/onboarding_button"),
-                "Cannot find button Got In",
-                10
-        );
-
-        waitForElementAndClear(
-                By.id("org.wikipedia:id/text_input"),
-                "Cannot find input field",
+                "Cannot find article",
                 5
         );
 
-        String name_of_folder = "My favorite articles";
-
-        waitForElementAndSendKeys(
-                By.id("org.wikipedia:id/text_input"),
-                name_of_folder,
-                "Cannot find input field",
-                5
+        int find_title = assertElementPresent(
+                By.id("org.wikipedia:id/view_page_title_text")
         );
 
-        waitForElementAndClick(
-                By.xpath("//*[@text='OK']"),
-                "Cannot find button OK",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
-                "Cannot close article, cannot find X link",
-                5
-        );
-
-//      - - - - - - - - - - Добавление второй статьи - - - - - - - - - - - - - - - -
-
-        waitForElementAndClick(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "Cannon find Search Wikipedia input",
-                5
-        );
-
-        waitForElementAndSendKeys(
-                By.id("org.wikipedia:id/search_src_text"),
-                "ferret",
-                "Cannon find search string",
-                15
-            );
-
-
-        waitForElementAndClick(
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@index='1']"),
-                "Mistake",
-                15
-            );
-
-        waitForElementAndClick(
-                By.xpath("//android.widgwt.ImageView[@content-desc='More options']"),
-                "Cannot find menu",
-                10
-            );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='Add to reading list']"),
-                "Cannot find Add to reading list",
-                10
-            );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='" + name_of_folder + "']"),
-                "Cannot find Add to reading list",
-                10
-        );
-
-        waitForElementAndClick(
-                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
-                "Cannot close article, cannot find X link",
-                5
-        );
-//      - - - - - - - - - - Удаление статьи - - - - - - - - - - - - - - - -
-
-        waitForElementAndClick(
-                By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),
-                "Cannot find My lists",
-                10
-        );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='" + name_of_folder + "']"),
-                "Cannot find Add to reading list",
-                10
-        );
-
- // Убеждаемся, что в списке 2 статьи
-
-        String name_of_first_article = "Ferret";
-        String name_of_second_article = "Ferretti Group";
-
-
-
-        waitForElementPresent(
-                By.xpath("//*[@text='" + name_of_first_article + "']"),
-                "Cannot find article 'Ferret'",
-                5
-        );
-
-        waitForElementPresent(
-                By.xpath("//*[@text='" + name_of_second_article + "']"),
-                "Cannot find article 'Ferretti Group'",
-                5
-        );
-
-        swipeElementToLeft(
-                By.xpath("//*[@text='" + name_of_first_article + "']"),
-                "Cannot find article 'Ferret'"
-                );
-
-// Убеждаемся, что в списке осталась одна статья
-
-        waitForElementNoPresent(
-                By.xpath("//*[@text='" + name_of_first_article + "']"),
-                "Find article 'Ferret'",
-                5
-        );
-
-        waitForElementPresent(
-                By.xpath("//*[@text='" + name_of_second_article + "']"),
-                "Cannot find article 'Ferretti Group'",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='" + name_of_second_article + "'']"),
-                "Cannot find article 'Ferretti Group'",
-                5
-        );
-
-        waitForElementPresent(
-                By.xpath("//*[@resource-id='org.wikipedia:id/view_page_title_text']//*[@text='" + name_of_second_article + "']"),
-                "Cannot find article 'Ferretti Group'",
-                5
+        Assert.assertTrue(
+                "Cannot find title",
+                find_title > 0
         );
 
     }
-
 
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
@@ -342,4 +377,11 @@ public class FirstTest {
                 .release()
                 .perform();
     }
+    
+    private int assertElementPresent(By by)
+    {
+        List element = driver.findElements(by);
+        return element.size();
+    }
+
 }

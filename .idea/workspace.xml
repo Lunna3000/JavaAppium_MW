@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaa38dce-6006-45fe-81b2-d0319d8ce9ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/MyListPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/NavigationUi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/ArticleTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/MyListsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,48 +25,113 @@
     <session id="-560291726">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="1" />
+          <entry key="class" value="8" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="16" />
+          <entry key="lib" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="1" />
+          <entry key="CLASS" value="8" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="16" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3084" />
+          <entry key="java" value="5725" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3084" />
+          <entry key="JAVA" value="5725" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/ArticleTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="379" column="4" selection-start-line="379" selection-start-column="4" selection-end-line="379" selection-end-column="4" />
+            <state relative-caret-position="264">
+              <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/libs/junit-4.12.jar!/junit/framework/TestCase.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="241" column="19" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="113" column="34" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaAppiumAutomation.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tests/MyListsTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/ui/MyListPageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,13 +148,27 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fir</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/lib/CoreTestCase.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/NavigationUi.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/MyListPageObject.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" />
+        <option value="$PROJECT_DIR$/src/Tests/ArticleTests.java" />
         <option value="$PROJECT_DIR$/src/FirstTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/MyListsTests.java" />
+        <option value="$PROJECT_DIR$/src/tests/ArticleTests.java" />
       </list>
     </option>
   </component>
@@ -98,9 +186,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="16" />
-    <option name="y" value="23" />
-    <option name="width" value="888" />
-    <option name="height" value="663" />
+    <option name="y" value="24" />
+    <option name="width" value="1264" />
+    <option name="height" value="734" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -108,7 +196,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,16 +213,51 @@
               <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
               <item name="apks" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="FirstTest&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/ext/jfxrt.jar!/com/sun/prism/shader/Solid_TextureFirstPassLCD_AlphaTest_Loader.class&#10;Firt&#9;RUN_CONFIGURATION&#9;FirstTest" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541448272363" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542572261013" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -154,18 +276,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyListsTests.testEx5">
+    <configuration name="ArticleTests.testEx3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ArticleTests" />
+      <option name="METHOD_NAME" value="testEx3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArticleTests.testEx6" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ArticleTests" />
+      <option name="METHOD_NAME" value="testEx6" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListsTests.testEx5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyListsTests" />
+      <option name="METHOD_NAME" value="testEx5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ArticleTests.testEx6" />
+      <item itemvalue="JUnit.ArticleTests.testEx3" />
+      <item itemvalue="JUnit.MyListsTests.testEx5" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTest" />
+        <item itemvalue="JUnit.MyListsTests.testEx5" />
+        <item itemvalue="JUnit.ArticleTests.testEx3" />
       </list>
     </recent_temporary>
   </component>
@@ -185,50 +338,52 @@
       <workItem from="1540930789835" duration="5309000" />
       <workItem from="1540937927098" duration="305000" />
       <workItem from="1541411815373" duration="2641000" />
-      <workItem from="1541414607787" duration="8878000" />
+      <workItem from="1541414607787" duration="12273000" />
+      <workItem from="1542557865220" duration="16000" />
+      <workItem from="1542557899730" duration="13226000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest - 2018.11.05 at 22h 23m 23s.xml">
+    <history-entry file="FirstTest_testEx5 - 2018.11.18 at 21h 46m 22s.xml">
+      <configuration name="FirstTest.testEx5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testEx5 - 2018.11.18 at 22h 45m 14s.xml">
+      <configuration name="FirstTest.testEx5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testEx6 - 2018.11.18 at 22h 51m 57s.xml">
+      <configuration name="FirstTest.testEx6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testEx6 - 2018.11.18 at 23h 02m 19s.xml">
+      <configuration name="FirstTest.testEx6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.11.18 at 23h 03m 08s.xml">
       <configuration name="FirstTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest - 2018.11.05 at 22h 53m 01s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_testEx6 - 2018.11.18 at 23h 07m 09s.xml">
+      <configuration name="FirstTest.testEx6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest - 2018.11.05 at 22h 55m 37s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
+    <history-entry file="ArticleTests_testEx2 - 2018.11.18 at 23h 13m 17s.xml">
+      <configuration name="ArticleTests.testEx2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest - 2018.11.05 at 22h 57m 01s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
+    <history-entry file="ArticleTests_testEx3 - 2018.11.18 at 23h 14m 58s.xml">
+      <configuration name="ArticleTests.testEx3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest - 2018.11.05 at 22h 58m 38s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
+    <history-entry file="ArticleTests_testEx3 - 2018.11.18 at 23h 16m 45s.xml">
+      <configuration name="ArticleTests.testEx3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest - 2018.11.05 at 22h 59m 36s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2018.11.05 at 23h 01m 20s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2018.11.05 at 23h 02m 54s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2018.11.05 at 23h 04m 14s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2018.11.05 at 23h 05m 21s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
+    <history-entry file="ArticleTests_testEx6 - 2018.11.18 at 23h 17m 20s.xml">
+      <configuration name="ArticleTests.testEx6" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30379000" />
+    <option name="totallyTimeSpent" value="47016000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="23" width="888" height="663" extended-state="0" />
+    <frame x="16" y="24" width="1264" height="734" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26104745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -237,8 +392,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36777583" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39926064" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3271028" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -246,7 +401,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32749563" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3271028" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -265,9 +420,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JavaAppiumAutomation.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -275,10 +427,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/NavigationUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="379" column="4" selection-start-line="379" selection-start-column="4" selection-end-line="379" selection-end-column="4" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/MyListPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/ext/jfxrt.jar!/com/sun/prism/shader/Solid_TextureFirstPassLCD_AlphaTest_Loader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaAppiumAutomation.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/ArticleTests.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1005#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/CoreTestCase.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/junit-4.12.jar!/junit/framework/TestCase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="241" column="19" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="113" column="34" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/ArticleTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/MyListsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

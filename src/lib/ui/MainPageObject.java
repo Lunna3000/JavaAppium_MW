@@ -74,7 +74,7 @@ public class MainPageObject {
         int point_to_click_y = middle_y;
 
         TouchAction action = new TouchAction(driver);
-        action.tap(point_to_click_x, point_to_click_y).perform());
+        action.tap(point_to_click_x, point_to_click_y).perform();
 
     }
 
@@ -94,7 +94,7 @@ public class MainPageObject {
 
         TouchAction action = new TouchAction(driver);
         action.press(right_x, middle_y);
-        action.waitAction(150)
+        action.waitAction(150);
 
         if (Platform.getInstance().isAndroid()){
             action.moveTo(left_x, middle_y);

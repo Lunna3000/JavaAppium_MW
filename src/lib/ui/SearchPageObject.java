@@ -3,16 +3,16 @@ package lib.ui;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 
-public class SearchPageObject extends MainPageObject{
+abstract public class SearchPageObject extends MainPageObject{
 
-    private static final String
-        SEARH_INIT_ELEMENT = "xpath://*[contains(@text,'Search Wikipedia')]",
-        SEARCH_INPUT = "id:org.wikipedia:id/search_src_text",
-        SEARCH_RESULT_BY_SUBSTRING_TPL = "xpath://*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@index='{SUBSTRING}']",
-        SEARCH_ARTICLE_TPL = "xpath://*[@text='{NAME_ARTICLE}']",
-        SEARCH_TEXT_TITLE_TPL = "xpath://*[@resource-id='org.wikipedia:id/view_page_title_text']//*[@text='{TITLE}']",
-        SEARCH_TITLE_TPL = "id:org.wikipedia:id/view_page_title_text",
-        SEARCH_CANCEL_BUTTON = "id:org.wikipedia:id/search_close_btn";
+    protected static String
+        SEARH_INIT_ELEMENT;
+    protected static String SEARCH_INPUT;
+    protected static String SEARCH_RESULT_BY_SUBSTRING_TPL;
+    protected static String SEARCH_ARTICLE_TPL;
+    protected static String SEARCH_TEXT_TITLE_TPL;
+    protected static String SEARCH_TITLE_TPL;
+    protected static String SEARCH_CANCEL_BUTTON;
 
     public  SearchPageObject(AppiumDriver driver)
     {
@@ -50,7 +50,7 @@ public class SearchPageObject extends MainPageObject{
     }
 
 //    Результат поиска
-    public void waitForSearchResultOnIndex(String substring)
+    public void waitForSearchResultOnIndexOrName(String substring)
     {
         String search_result_xpath = getResultSearchElement(substring);
         this.waitForElementPresent(

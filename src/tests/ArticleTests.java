@@ -2,6 +2,7 @@ package tests;
 
 import lib.CoreTestCase;
 import lib.ui.SearchPageObject;
+import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
 public class ArticleTests extends CoreTestCase {
@@ -32,12 +33,12 @@ public class ArticleTests extends CoreTestCase {
     @Test
     public void testEx3()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("pineapple");
 
 //   В данном шаге проверяется наличие 2й статьи в списке. Если она есть, значит найдено больше одной статьи, то есть "несколько статей"
-        SearchPageObject.waitForSearchResultOnIndex("1");
+        SearchPageObject.waitForSearchResultOnIndexOrName("1");
         SearchPageObject.clickCancelSearch();
         SearchPageObject.waitForSearchResultOnIndexDisappear("1");
 
@@ -47,10 +48,10 @@ public class ArticleTests extends CoreTestCase {
     @Test
     public void testEx6()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Appium");
-        SearchPageObject.waitForSearchResultOnIndex("0");
+        SearchPageObject.waitForSearchResultOnIndexOrName("0");
         SearchPageObject.waitForSearchTitle();
     }
 
